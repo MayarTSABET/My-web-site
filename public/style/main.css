@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+header > nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header > nav > ul {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px 100px;
+    align-items: center;
+    justify-items: center;
+}
+
+header > nav > ul > li > a {
+    color: #fff;
+}
+
+header > nav > ul > li > a:hover {
+    color: #ccc;
+}
+
+#login {
+    grid-column: 3 / 4;
+}
+
+.container {
+    background-color: rgb(248, 192, 202);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: rgb(216, 140, 153);
+    border-radius: 10px;
+    padding: 45px;
+    width: 375px;
+    max-width: 95%;
+    box-shadow: 5px 5px 10px 1px rgb(0,0,0,10%);
+}
+
+.box > h1 {
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.box > form > label {
+    display: block;
+    font-size: 12;
+    margin-bottom: 3px;
+}
+
+.box > form > input {
+    font-size: 12px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    min-width: 0;
+    flex: 1;
+}
+
+.box > form > input::placeholder {
+    opacity: 1;
+    color: #aca1a1;
+    font-size: 12px;
+}
+
+.box > form > input[type="submit"] {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color:  rgb(244, 156, 172);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    margin-top: 45px;
+    border-radius: 250px;
+}
+.box > form > input[type="submit"]:hover {
+    background-color:rgb(159, 102, 114);
+    cursor: pointer;
+}
+
